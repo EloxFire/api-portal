@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+$violet: #9146FF;
+$black: #121212;
+$white: #f5f6fa;
+$red: #e64c3c;
+$green: #2ecc71;
+
+*{
+  font-family: Montserrat;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: Ubuntu;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+a{
+  text-decoration: none;
+  color: $white;
+  transition: .3s;
+
+  &::after{
+    content: "";
+    position: absolute;
+    width: 0px;
+    background-color: $violet;
+    height: 10px;
+    left: 10;
+    right: 0;
+    margin-top: 5px;
+    transition: .3s;
+  }
+
+  &:hover{
+    text-decoration: none;
+    color: $violet;
+
+    &::after{
+      content: "";
+      color: $white;
+      position: absolute;
+      width: 110px;
+      background-color: $violet;
+      height: 10px;
+      margin-top: 6px;
+      left: 10;
+      right: 0;
+    }
+  }
+}

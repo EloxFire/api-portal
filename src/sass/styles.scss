@@ -1,0 +1,30 @@
+@import "main.scss";
+
+#navbar{
+  background-color: $black;
+  height: 100vh;
+  color: $white;
+
+  .navbar-header{
+    height: 10%;
+    .navbar-logo{
+      max-height: 45px;
+    }
+  }
+
+  .navbar-body{
+    height: 80%;
+  }
+
+  .navbar-footer{
+    height: 10%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #navbar{
+    height: 30vh;
+    align-items: center;
+    overflow: auto;
+  }
+}
